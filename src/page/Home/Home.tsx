@@ -7,11 +7,15 @@ import Accordion from '../../component/Accordion/Accordion';
 import { roadMapData , FAQData , roadType , FAQType } from '../../utils/type';
 import Member from '../../component/Member/Member';
 import Button from '../../component/Button/Button';
+
+
 const Home = () => {
+  
   const mdDown = useMediaQuery('(max-width:720px)');
+  
   return(
     <>
-      <div className={styles.container}>
+      <div id='home' className={styles.container}>
 
         
         <div className={styles.top}>
@@ -55,17 +59,17 @@ const Home = () => {
         </div>
 
 
-        <div className={styles.road_map}>
+        <div id='roadmap' className={styles.road_map}>
           <div className={styles.road_map_body}>
             <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
-              <Typography variant='h2' sx={{fontSize:{xs:'40px',md:'54px'}}} >Roadmap</Typography>
+              <Typography variant='h2' sx={{fontSize:{xs:'40px',md:'54px',textAlign:'left'}}} >Roadmap</Typography>
             </div>
             <div style={{width : mdDown ? '100%' : ''}}>
               {
                 roadMapData.map((info:roadType,index:number) => (
                   <Stack sx={{padding:'15px 0px'}} key={index} direction='row' alignItems='center' spacing={2}>
                     <img src={info.img}></img>
-                    <Typography variant='h4' sx={{fontSize:{xs:'18px'}}}>{info.text}</Typography>
+                    <Typography variant='h4' sx={{fontSize:{xs:'18px',sm:'20px'},lineHeight:'25px'}}>{info.text}</Typography>
                   </Stack>
                 ))
               }
@@ -74,7 +78,7 @@ const Home = () => {
         </div>
         
 
-        <div className={styles.faq}>
+        <div id='faq' className={styles.faq}>
           <div className={styles.faq_body}>
             <Typography variant='h2' sx={{textAlign:'center'}}>F.A.Q.</Typography>
             {
@@ -86,7 +90,7 @@ const Home = () => {
         </div>
 
 
-        <div className={styles.team}>
+        <div id='team' className={styles.team}>
           <div className={styles.team_body}>
           <Typography variant='h2' sx={{fontSize:{xs:'40px',md:'54px',textAlign:'center'}}} >Team</Typography>
             <Stack direction={{sm:"column",xs:'column',md:'row'}} spacing={5} justifyContent='center' sx={{mb:8,mt:5}}>
@@ -112,7 +116,7 @@ const Home = () => {
         </div>
         
 
-        <div className={styles.partner}>
+        <div  className={styles.partner}>
           <div className={styles.partner_body}>
             <Stack direction='column' spacing={7} justifyContent='center'>
               <Typography variant='h2' sx={{fontSize:{xs:'40px',md:'54px',textAlign:'center'}}} >Partners</Typography>

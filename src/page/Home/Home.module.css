@@ -139,7 +139,15 @@
   }
 }
 @media screen and (max-width:720px){
-  .road_map_body{
+  /* .road_map_body{
     width: 100%;
+  } */
+}
+@media screen and (max-width:500px){
+  .road_map_body{
+    padding:80px 20px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
   }
 }

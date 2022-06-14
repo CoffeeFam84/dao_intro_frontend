@@ -3,7 +3,7 @@ import  style from './Header.module.css';
 import {Stack , IconButton, useMediaQuery} from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import {useState} from 'react';
-// import { Link } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 const Header = () => {
   const isMobile = useMediaQuery('(max-width: 720px)')
@@ -22,12 +22,12 @@ const Header = () => {
           {
             !isMobile && 
             <div className={style.menulist}>
-              <a href=''>Home</a>
-              <a href=''>Roadmap</a>
-              <a href=''>FAQ</a>
-              <a href=''>Team</a>
-              <a href=''>Mint</a>
-              <a href=''>DAO Games</a>
+              <Link className={style.link} to="home" spy={true} smooth={true}>Home</Link>
+              <Link className={style.link} to="roadmap" spy={true} smooth={true}>Roadmap</Link>
+              <Link className={style.link} to="faq" spy={true} smooth={true}>FAQ</Link>
+              <Link className={style.link} to="team" spy={true} smooth={true}>Team</Link>
+              <Link className={style.link} to="mint" spy={true} smooth={true}>Mint</Link>
+              <Link className={style.link} to="dao_game" spy={true} smooth={true}>DAO Games</Link>
             </div>
           }
           <Stack direction='row' spacing={2}>
@@ -39,12 +39,12 @@ const Header = () => {
         {
           hambuger && isMobile && 
           <div className={style.mobile_menulist}>
-              <a href=''>Home</a>
-              <a href=''>Roadmap</a>
-              <a href=''>FAQ</a>
-              <a href=''>Team</a>
-              <a href=''>Mint</a>
-              <a href=''>DAO Games</a>
+              <Link className={style.link} to="home" spy={true} smooth={true}>Home</Link>
+              <Link className={style.link} to="roadmap" spy={true} smooth={true}>Roadmap</Link>
+              <Link className={style.link} to="faq" spy={true} smooth={true}>FAQ</Link>
+              <Link className={style.link} to="team" spy={true} smooth={true}>Team</Link>
+              <Link className={style.link} to="mint" spy={true} smooth={true}>Mint</Link>
+              <Link className={style.link} to="dao_game" spy={true} smooth={true}>DAO Games</Link>
           </div>
         }
       </div>

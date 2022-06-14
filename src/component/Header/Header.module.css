@@ -19,7 +19,7 @@
   align-items: center;
   width: 50%;
 }
-.menulist a{
+.menulist .link{
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -27,9 +27,10 @@
   letter-spacing: -0.5px;
   color: #9DAFBD;
   text-decoration: none;
+  cursor: pointer;
  
 }
-.menulist a:hover{
+.menulist .link:hover{
   color: #26D6BB;
 }
 .icon{
@@ -42,7 +43,7 @@
   flex-direction: column;
 
 }
-.mobile_menulist a{
+.mobile_menulist .link{
   margin-bottom:15px;
   margin-left: 40px;
   font-style: normal;
@@ -52,7 +53,8 @@
   letter-spacing: -0.5px;
   color: #9DAFBD;
   text-decoration: none;
+  cursor: pointer;
 }
-.mobile_menulist a:hover{
+.mobile_menulist .link:hover{
   color:#26D6BB;
 }

@@ -1,0 +1,145 @@
+.container{
+  width: 100%;
+}
+
+.top{
+  background-image: url('../../../public/assets/image/bg.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 580px;
+  padding-top: 90px;
+  width: 100%;
+}
+
+.bottom{
+  background: #15253D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 710px;
+  width: 100%;
+}
+
+.top_body{
+  max-width: 1440px;
+  margin: auto;
+  width: 80%;
+}
+
+.bottom_body{
+  max-width:1440px;
+  margin: auto;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.more_icon{
+  position: absolute;
+  right: -38px;
+  bottom: -32px;
+}
+
+.story_img{
+  position: relative;
+}
+.list_item_box{
+  background: #1B3C5C;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:100px 0px;
+}
+.list_item_body{
+  max-width: 1440px;
+  margin: auto;
+  width: 100%;
+}
+.list{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.road_map{
+  background:#15253D;
+  width: 100%;
+}
+.road_map_body{
+  max-width: 1440px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding:80px ;
+}
+.faq{
+  background: #1B3C5C;
+  width: 100%;
+  padding:90px 0px 180px 0px;
+}
+.faq_body{
+  max-width: 1440px;
+  width:80%;
+  margin:auto;
+}
+.team{
+  width: 100%;
+  background: #193052;
+}
+.team_body{
+  max-width: 1440px;
+  width: 80%;
+  margin:auto;
+  padding: 90px 0px 110px 0px;
+}
+.partner{
+  width: 100%;
+  background:#16253A;
+}
+.partner_body{
+  max-width: 1440px;
+  width: 80%;
+  margin: auto;
+  padding:90px 0px 80px 0px;
+}
+
+
+@media screen and (max-width:412px){
+  .list{
+    justify-content: center;
+  }
+}
+
+
+@media screen and (max-width:930px){
+  .flex{
+    flex-direction: column;
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width:480px){
+  .img{
+    width: 80%;
+  }
+  .more_icon{
+   width: 30%;
+   right: 61px;
+    bottom: -12px;
+  }
+}
+@media screen and (max-width:720px){
+  .road_map_body{
+    width: 100%;
+  }
+}

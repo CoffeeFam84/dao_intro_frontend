@@ -24,7 +24,7 @@ export const roadMapData:roadType[] = [
     text:'Dr Dao become a incubator',
   },{
     img:'./assets/image/games.png',
-    text:'Release Dao games',
+    text:'Release Dao Games',
   },{
     img:'./assets/image/Sand Watch.png',
     text:'Work in progress',

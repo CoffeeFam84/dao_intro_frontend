@@ -18,7 +18,7 @@ const Header = () => {
           {
             isMobile    && <IconButton color='secondary' onClick={handleClick}><MenuIcon/></IconButton>
           }
-          <img src='./assets/image/logo.png'></img>
+          <img style={{width:'60px'}} src='./assets/image/drdao-logo.png'></img>
           {
             !isMobile && 
             <div className={style.menulist}>
@@ -33,7 +33,7 @@ const Header = () => {
           <Stack direction='row' spacing={2}>
             <img src='./assets/image/Instagram.png'></img>
             <img src='./assets/image/Twitter.png'></img>
-            <img src='./assets/image/Twitter.png'></img>
+            <img src='./assets/image/Vk.png'></img>
           </Stack>
         </div>
         {

@@ -5,7 +5,7 @@ const GetButton  = (props:any) => {
   const { title , width } = props;
   return(
     <>
-      <Button sx={{width:width,margin:'30px 0px'}} variant="contained" color='secondary' >{title}</Button>
+      <Button sx={{width:width,margin:'15px 0px'}} variant="contained" color='secondary' >{title}</Button>
     </>
   );
 }

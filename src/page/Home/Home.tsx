@@ -1,7 +1,6 @@
 
-import styles from './Home.module.css';
 import { Typography  ,Stack, useMediaQuery } from '@mui/material';
-
+import styles from './Home.module.css';
 import ListItem from '../../component/ListItem/ListItem';
 import Accordion from '../../component/Accordion/Accordion';
 import { roadMapData , FAQData , roadType , FAQType } from '../../utils/type';
@@ -21,8 +20,10 @@ const Home = () => {
         <div className={styles.top}>
           <div className={styles.top_body}>
             <Typography variant='h2' sx={{fontSize:{xs:'40px',md:'54px'},lineHeight:{xs:'50px',md:'70px'}}}>Decentralized<br/>Autonomous Organization</Typography>
-            <Typography variant='h5'>DAO refers to a revolutionary way of managing organizations, able to ensure transparency, immutability, autonomy and security thanks to smart contracts and blockchain technology.</Typography>
-            <Button title='Get Started'/>
+            <Typography sx={{marginTop:'31px'}} variant='h5'>DAO refers to a revolutionary way of managing organizations, able <br/> to ensure transparency, immutability, autonomy and security thanks <br/> to smart contracts and blockchain technology.</Typography>
+
+            <Typography sx={{marginTop:'30px',fontSize:'14px',fontWeight:'400',color:'rgba(255, 255, 255, 0.8)'}} variant='h5'>Learn more about the project</Typography>
+            <Button title='Get Started' width='206px'/>
           </div>
         </div>
 
@@ -49,15 +50,14 @@ const Home = () => {
         <div className={styles.list_item_box}>
           <div className={styles.list_item_body}>
             <div className={styles.list}>
-              <ListItem img='./assets/image/1.png' title='DAO governace' content='Each owner has the same rights tothe development decisions of the project' />
-              <ListItem img='./assets/image/2.png' title='Incubator' content='Dr. Dao is an access pass for future collections developed by daolab' />
+              <ListItem img='./assets/image/1.png' title='DAO governace' content='Each owner has the same rights to the development decisions of the project' />
+              <ListItem img='./assets/image/2.png' title='Incubator' content='Dr. Dao is an access pass for future collections developed by Dao Lab' />
               <ListItem img='./assets/image/3.png' title='Redistribution' content='50% of the volume traded in secondary markets is redistributed to Dr Dao Owners weekly' />
               <ListItem img='./assets/image/4.png' title='Staking' content='Dao Lab products generate passive income at our partner sites' />
               <ListItem img='./assets/image/5.png' title='Dao games P2R and P2e' content='(coming SOON)' />
             </div>
           </div>
         </div>
-
 
         <div id='roadmap' className={styles.road_map}>
           <div className={styles.road_map_body}>
@@ -80,7 +80,7 @@ const Home = () => {
 
         <div id='faq' className={styles.faq}>
           <div className={styles.faq_body}>
-            <Typography variant='h2' sx={{textAlign:'center'}}>F.A.Q.</Typography>
+            <Typography variant='h2' sx={{textAlign:'center',marginBottom:'43px'}}>F.A.Q.</Typography>
             {
               FAQData.map((info:any,index:number) => (
                 <Accordion key={index} title={info.title} content={info.content} />

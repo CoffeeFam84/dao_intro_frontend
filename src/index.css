@@ -14,4 +14,5 @@ code {
 }
 *{
   font-family: 'Roboto';
+  transition-duration: 0.5s;
 }

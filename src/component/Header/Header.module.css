@@ -41,7 +41,6 @@
 .mobile_menulist{
   display: flex;
   flex-direction: column;
-
 }
 .mobile_menulist .link{
   margin-bottom:15px;

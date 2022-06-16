@@ -13,9 +13,9 @@ const Footer = () => {
             <img style={{width:'60px'}} src='./assets/image/drdao-logo.png'></img>
             <Button title='Get Started' width='282px'/>
             <Stack direction='row' spacing={2}>
-              <img src='./assets/image/Instagram.png'></img>
-              <img src='./assets/image/Twitter.png'></img>
-              <img src='./assets/image/Vk.png'></img>
+              <a href='https://medium.com/@drdao.club' target='_blank'><img src='./assets/image/Instagram.png'></img></a>
+              <a href='https://twitter.com/DrDaoClub' target='_blank'><img src='./assets/image/Twitter.png'></img></a>
+              <a href='https://discord.gg/tCNHG9bnyS' target='_blank'><img src='./assets/image/Vk.png'></img></a>
             </Stack>
           </Stack>
         </Box>

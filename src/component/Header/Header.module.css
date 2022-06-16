@@ -57,3 +57,6 @@
 .mobile_menulist .link:hover{
   color:#26D6BB;
 }
+a{
+  text-decoration: none;
+}

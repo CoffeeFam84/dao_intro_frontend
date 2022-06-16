@@ -3,9 +3,9 @@
 }
 
 .top{
-  background-image: url('../../../public/assets/image/bg.png');
+  background-image: url('../../../public/assets/image/Artboard.png');
   background-size: cover;
-  background-position: center center;
+  
   background-repeat: no-repeat;
   height: 580px;
   padding-top: 90px;
@@ -113,6 +113,12 @@
   padding:90px 0px 80px 0px;
 }
 
+.line{
+  position: absolute;
+  left: 33px;
+  top: -69px;
+  height: 116.5%;
+}
 
 @media screen and (max-width:412px){
   .list{
@@ -150,4 +156,17 @@
     display: flex;
     justify-content: center;
   }
+}
+@media screen and (max-width:899px){
+  .line{
+    top: -140px;
+    height: 125%;
+  }
+}
+@media screen and (max-width:930px){
+  .bottom{
+    height: auto;
+    padding: 30px 0px;
+  }
+ 
 }

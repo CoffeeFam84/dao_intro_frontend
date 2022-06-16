@@ -1,11 +1,13 @@
 
-import { Typography  ,Stack, useMediaQuery } from '@mui/material';
+import { Typography  ,Stack, useMediaQuery , Divider } from '@mui/material';
+import {styled} from '@mui/material/styles';
 import styles from './Home.module.css';
 import ListItem from '../../component/ListItem/ListItem';
 import Accordion from '../../component/Accordion/Accordion';
 import { roadMapData , FAQData , roadType , FAQType } from '../../utils/type';
 import Member from '../../component/Member/Member';
 import Button from '../../component/Button/Button';
+
 
 
 const Home = () => {
@@ -33,14 +35,16 @@ const Home = () => {
             <div className={styles.flex}>
               <div style={{marginRight:'30px',marginBottom:'30px'}}>
                 <Typography variant='h2' sx={{fontSize:{xs:'40px',md:'54px'}}}>The Story</Typography>
-                <Typography variant='h5'>In the middle of a dark night, after long years 
-                of painstaking work, Dr. Dao found away to create a window into parallel worlds. After 
-                that, teaming up with alternative Dao doctors from different universes, they created the Dao Club to explore incredible new open worlds together and make exciting discoveries.
+                <Typography sx={{mt:3}} variant='h5'>In the middle of a dark night, after many long years of painstaking work in the Dao Lab, Dr Dao achieved the impossible and found a way to create a window into parallel worlds. 
                 </Typography>
+                <Typography sx={{mt:3}} variant='h5'>His adventure has only just begun. Teaming up with his parallel Dao Doctors, together they create the Dao Club. 
+                </Typography>
+                <Typography sx={{mt:3}} variant='h5'>They seek to explore new worlds and uncover exciting discoveries to share with all Dao Club Members.
+                </Typography>
+               
               </div>
               <div className={styles.story_img}>
                 <img className={styles.img} src='./assets/image/Image.png'></img>
-                <img className={styles.more_icon} src='./assets/image/Learn More.png'></img>
               </div>
             </div>
           </div>
@@ -64,13 +68,18 @@ const Home = () => {
             <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
               <Typography variant='h2' sx={{fontSize:{xs:'40px',md:'54px',textAlign:'left'}}} >Roadmap</Typography>
             </div>
-            <div style={{width : mdDown ? '100%' : ''}}>
+            <div style={{width : mdDown ? '100%' : '',position:'relative'}}>
+              <img className={styles.line} src='./assets/image/Line.png'></img>
               {
                 roadMapData.map((info:roadType,index:number) => (
-                  <Stack sx={{padding:'15px 0px'}} key={index} direction='row' alignItems='center' spacing={2}>
-                    <img src={info.img}></img>
-                    <Typography variant='h4' sx={{fontSize:{xs:'18px',sm:'20px'},lineHeight:'25px'}}>{info.text}</Typography>
-                  </Stack>
+
+                    
+                      <Stack sx={{padding:'20px 0px',position:'relative'}}  direction='row' alignItems='center' spacing={2}>
+                        <img style={{background:'#15253D'}} src={info.img}></img>
+                        <Typography variant='h4' sx={{fontSize:{xs:'18px',sm:'20px'},lineHeight:'25px'}}>{info.text}</Typography>
+                      </Stack>
+                    
+    
                 ))
               }
             </div>

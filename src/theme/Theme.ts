@@ -41,7 +41,7 @@ export const theme = createTheme({
       fontSize: '18px',
       fontWeight: 400,
       color:'white',
-      maxWidth:'400px'
+      // maxWidth:'400px'
     },
     h6: {
       fontSize: '14px',

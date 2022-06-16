@@ -5,10 +5,12 @@
 .top{
   background-image: url('../../../public/assets/image/Artboard.png');
   background-size: cover;
-  
+  display: flex;
+  background-position: center center;
+  flex-direction: column;
+  align-items: center;
   background-repeat: no-repeat;
   height: 580px;
-  padding-top: 90px;
   width: 100%;
 }
 

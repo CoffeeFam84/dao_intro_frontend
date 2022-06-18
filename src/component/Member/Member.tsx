@@ -1,20 +1,31 @@
 
 
 import {Stack, Typography} from '@mui/material';
-
+import './Member.css';
 
 interface memberType{
   img:string,
   name:string,
-  text:string
+  text:string,
+  fileType:string,
 }
 const Member = (props:memberType) => {
-  const { img , name , text } = props;
+  const { img , name , text ,fileType } = props;
 
   return(
     <>
       <Stack direction='column' spacing={3} alignItems='center' justifyContent='center'>
-        <img src={img}></img>
+        {
+          fileType === 'img' && <img src={img} ></img>
+        }
+        {
+          fileType === 'mp4' && 
+          <div className='mask'>
+            <video width="186px" autoPlay loop>
+              <source src={img} type="video/mp4"/>
+            </video>
+          </div>
+        }
         <Stack direction='column' spacing={0.5} alignItems='center' justifyContent='center'>
           <Typography sx={{color:theme => theme.palette.secondary.main,fontSize:'18px',fontWeight:'400',lineHeight:"22px",textAlign:'center'}}>{name}</Typography>
           <Typography sx={{color:'white',fontSize:'18px',fontWeight:'400',lineHeight:"22px"}}>{text}</Typography>

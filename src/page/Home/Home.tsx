@@ -99,22 +99,22 @@ const Home = () => {
           <div className={styles.team_body}>
           <Typography variant='h2' sx={{fontSize:{xs:'40px',md:'54px',textAlign:'center'}}} >Team</Typography>
             <Stack direction={{sm:"column",xs:'column',md:'row'}} spacing={5} justifyContent='center' sx={{mb:8,mt:5}}>
-              <Member img='./assets/image/member0.png' name='Dr Dao Founder' text='Head of Marketing Artist' />
-              <Member img='./assets/image/member1.png' name='Dr Dao Founder' text='Head of Project Artist' />
+              <Member img='./assets/image/294.mp4' name='Dr Dao Founder' text='Head of Marketing Artist' fileType='mp4'/>
+              <Member img='./assets/image/295.mp4' name='Dr Dao Founder' text='Head of Project Artist' fileType='mp4'/>
             </Stack>
             <Stack direction={{lg:'column',xs:'column',xl:'row'}} spacing={5} justifyContent='center'>
               <Stack direction={{md:'column',xs:'column',lg:'row'}} spacing={5} justifyContent='center'>
-                <Member img='./assets/image/member2.png' name='Dr Dao Developer' text='' />
+                <Member img='./assets/image/291.mp4' name='Dr Dao Developer' text='' fileType='mp4'/>
               
                 <Stack direction={{sm:"column",xs:'column',md:'row'}} spacing={5} justifyContent='center'>
-                  <Member img='./assets/image/member3.png' name='Dr Dao Developer' text='' />
-                  <Member img='./assets/image/member4.png' name='Dr Dao Developer' text='' />
+                  <Member img='./assets/image/293.mp4' name='Dr Dao Developer' text='' fileType='mp4'/>
+                  <Member img='./assets/image/Dr Smart NFT.mp4' name='Dr Dao Developer' text='' fileType='mp4'/>
                 </Stack>
               </Stack>
               
               <Stack direction={{sm:"column",xs:'column',md:'row'}} spacing={5} justifyContent='center'>
-                <Member img='./assets/image/member5.png' name='Dr Dao Community Manager' text='' />
-                <Member img='./assets/image/member6.png' name='Dr Dao Designer' text='' />
+                <Member img='./assets/image/292.mp4' name='Dr Dao Community Manager' text='' fileType='mp4'/>
+                <Member img='./assets/image/296.mp4' name='Dr Dao Designer' text='' fileType='mp4'/>
               </Stack>
             </Stack>
           </div>
@@ -126,8 +126,8 @@ const Home = () => {
             <Stack direction='column' spacing={7} justifyContent='center'>
               <Typography variant='h2' sx={{fontSize:{xs:'40px',md:'54px',textAlign:'center'}}} >Partners</Typography>
               <Stack direction={{sm:'column',xs:'column',md:'row'}} spacing={20}  justifyContent='center' >
-                <Member img='./assets/image/LogoShirt.png' name='Crosmonauts' text='' />
-                <Member img='./assets/image/cyborgswap.png' name='CyborgSwap' text='' />
+                <Member img='./assets/image/LogoShirt.png' name='Crosmonauts' text='' fileType='img' />
+                <Member img='./assets/image/cyborgswap.png' name='CyborgSwap' text=''  fileType='img'/>
               </Stack>
             </Stack>
           </div>

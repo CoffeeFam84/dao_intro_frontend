@@ -1,11 +1,9 @@
 
 
 .mask{
-  -webkit-mask-image: url('../../../public/assets/image/member0.png');
-  mask-image: url('../../../public/assets/image/member0.png');
-  -webkit-mask-size: 100%;
+  mask-image: url('../../../public/assets/image/mask.png');
   background: transparent;
   mask-size: 100%;
-  -webkit-mask-repeat: no-repeat;
+  mask-position: bottom;
   mask-repeat: no-repeat;
 }

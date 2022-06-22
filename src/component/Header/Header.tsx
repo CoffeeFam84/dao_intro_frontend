@@ -34,6 +34,7 @@ const Header = () => {
             <a href='https://medium.com/@drdao.club' target='_blank'><img src='./assets/image/Instagram.png'></img></a>
             <a href='https://twitter.com/DrDaoClub' target='_blank'><img src='./assets/image/Twitter.png'></img></a>
             <a href='https://discord.gg/tCNHG9bnyS' target='_blank'><img src='./assets/image/Vk.png'></img></a>
+            <a href='https://raritysniper.com/nft-drops-calendar' target='_blank'><img src='./assets/image/sniper.png' style={{width: '20px', height: '20px'}}></img></a>
           </Stack>
         </div>
         {

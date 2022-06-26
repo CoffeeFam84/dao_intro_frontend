@@ -1,6 +1,6 @@
 import  style from './Header.module.css';
 // import { Outlet, Link } from "react-router-dom";
-import {Stack , IconButton, useMediaQuery} from '@mui/material';
+import {Stack , IconButton, useMediaQuery , Typography } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import {useState} from 'react';
 import { Link } from 'react-scroll';
@@ -36,6 +36,22 @@ const Header = () => {
             <a href='https://discord.gg/tCNHG9bnyS' target='_blank'><img src='./assets/image/Vk.png'></img></a>
             <a href='https://raritysniper.com/nft-drops-calendar' target='_blank'><img src='./assets/image/sniper.png' style={{width: '20px', height: '20px'}}></img></a>
           </Stack>
+          <a target='_blank' href="https://nftcalendar.io/event/maximaze-your-passive-income-with-dr-dao-nfts/">
+              <Stack direction='row' spacing={2} alignItems='center'>             
+                <Typography 
+                sx={{
+                  color:'white',
+                  fontSize:'18px',
+                  fontWeight:'400',
+                  whiteSpace:'no-wrap',
+                  display:{xs:'none',md:'none',lg:'block'}
+                }}
+                >
+                  As seen on
+                </Typography>
+                <img style={{width:'60px'}} src='./assets/image/nft-calendar-transparent.png'></img>
+              </Stack>
+            </a>
         </div>
         {
           hambuger && isMobile && 
